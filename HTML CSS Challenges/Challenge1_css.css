@@ -28,3 +28,85 @@ table, th, td {
 th {
     background-color:antiquewhite;
 }
+.container {
+    position: relative;
+    text-align:center;
+    width:250px;
+    margin:0 auto;
+}
+.container:hover .overlay {
+    opacity:1;
+}
+.overlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity:0;
+    transition:.5s ease;
+    background-color:#008CBA;
+}
+
+.text {
+    color:gold;
+    font-size:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, 50%);
+    transform:translate(-50%, -50%);
+    text-align:center;
+}
+.centered {
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:bisque
+    
+}
+.navbar {
+    overflow:hidden;
+    background-color:#333;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.navbar a {
+    float:left;
+    display:block;
+    color: #bbb;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+.navbar a:hover {
+    background:#ddd;
+    color:black;
+}
+.column {
+    float:left;
+    height:200px;
+    width:50%;
+    background-color:powderblue;
+    content:"Please show this text in the blue column";
+    color:white;
+}
+.column2 {
+    float:right;
+    height:200px;
+    width:50%;
+    background-color:yellow;
+    color:black;
+}
+.row:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+p:hover {
+    background-color:purple;
+}
