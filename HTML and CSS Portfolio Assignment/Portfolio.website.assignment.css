@@ -1,0 +1,57 @@
+/*General Styling*/
+/*Body*/
+body {
+    margin:0%/*ensures site displays all the way to edge of browser screen*/
+}
+/*Heading 1 elements*/
+h1 {
+    text-transform:uppercase;/*Capitalizing all h1 headings*/
+    font-family:Garamond, Times New Roman;
+    text-align:center;/*Centering all h1 elements*/
+    margin-top:3%;/*Adds a small margin above h1 elements*/
+    color:#1a1a1a;
+}
+
+/*Heading 1 element hover effect*/
+h1:hover {
+    background-color:gold;
+    color:gold;
+    background:fixedlinear-gradient(90deg,#FF5733 50%,#1a1a1a)
+    var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip:text;
+        background-clip:text;
+        transition:1s;
+}
+/*Styling for portfolio title text*/
+.white-text {
+    color:black;
+}
+/*Paragraph elements*/
+p {
+    font-family:Garamond, Times New Roman;
+    text-align:justify;
+    letter-spacing:1px;
+    font-size:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+/*Paragraph element hover effect*/
+p:hover{
+    color: rgba(171, 139, 33, 0.745);
+    background: 
+      linear-gradient(90deg,#961079 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .4s;
+    transform:scale(1.01);/*paragraphs increase in size when hovered*/
+  }
+  /*Center class-applies to all elements with class "center"*/
+  .center {
+    text-align:center;
+  }
+  /*Center class hover effect-only affects the github link, and footer*/
+  .center:hover {
+    transition:transform .5s;
+    transform:rotate(360deg);/*spinning text*/
+  }
