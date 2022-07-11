@@ -379,7 +379,7 @@ section {
 /*Styling for Lightbox*/
 .column {
     float:left;
-    width:11%;
+    width:10%;
     max-height:500px;
     max-width:500px;
 }
