@@ -14,6 +14,15 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
+    /*element fade in*/
+    opacity:1;
+    transition:1s opacity;
+}
+
+/*element fade out*/
+body.fade-out {
+    opacity:0;
+    transition:none;
 }
 
 footer,
@@ -497,4 +506,9 @@ img.hover-shadow {
 
 .hover-shadow:hover {
     box-shadow:0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+/*background fade in color for element fade in*/
+html {
+    background-color:black;
 }

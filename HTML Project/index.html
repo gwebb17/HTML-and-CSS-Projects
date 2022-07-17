@@ -8,6 +8,10 @@
 		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
+		<!--js element fade in necessary to place inline here as opposed to separate file because of flickering-->
+		<script>
+			document.body.classList.add('fade-out');
+		</script>
 	
 		<!--NAV-->
 		<div class="wrap">
@@ -323,3 +327,11 @@
 			www.52800000fathomsunderthesea.com &nbsp;| &copy;1870
 		</div>
 		<!--END FOOTER-->
+
+		<!--remove fade out once body is loaded-->
+		<script>window.addEventListener('DOMContentLoaded', () => {
+			document.body.classList.remove('fade-out');
+		});
+		</script>
+	</body>
+</html>
