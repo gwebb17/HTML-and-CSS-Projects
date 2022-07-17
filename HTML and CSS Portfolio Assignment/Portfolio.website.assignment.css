@@ -1,7 +1,7 @@
 /*General Styling*/
 /*Body*/
 body {
-    margin:0% /*ensures site displays all the way to edge of browser screen*/
+    margin:0%; /*ensures site displays all the way to edge of browser screen*/
     transition:3s opacity;
     letter-spacing: 2.vw; /*vw is a relative measurement, 1vw is equal to 1% of viewport width*/
     font-family:Garamond, Times New Roman;
@@ -206,7 +206,7 @@ footer {
 #Slideshow_Container {
   width:39.5vw; /*relative sizing of container for the slidehosw set to 39.5% of viewport width*/
   height:auto; /*height of container is automatically adjusted based on content it is displaying*/
-  padding-top:4% /*adds padding to top of slideshow container*/
+  padding-top:4%; /*adds padding to top of slideshow container*/
   position:relative;
   margin:auto;
 }
@@ -260,7 +260,7 @@ footer {
   width:100%; /*element covers full width of image*/
   text-align:center;
   font-family:Garamond, Times New Roman;
-  letter-spacing:1vw;
+  letter-spacing:.5vw;
   font-size:1.5vw;
   background-color: rgba(0,0,0,.75); /*slightly transparent black background*/
   font-weight:bold;
@@ -274,7 +274,7 @@ footer {
   width:1vw;
   margin:.25vw; /*adds additional spacing between dots*/
   background-color:white;
-  border-radius:50% /*makes dots circles by rounding each corner*/
+  border-radius:50%; /*makes dots circles by rounding each corner*/
   display:inline-block; /*allows dots to sit next to eachother instead of on a new line*/
   transition:background-color 0.6s ease; /*when clicked the dots transition to different color when clicked or hovered on effect defined below*/
   z-index:1; /*ensures dots displayed above other elements*/
@@ -304,7 +304,7 @@ footer {
 }
 /***End slideshow Styling***/
 
-/***Table styling***/
+/***Table styling-this section covers styling for columns and rows within the table, the * is a universal selector that applies this effect to all elements on the page***/
 * {
   box-sizing:border-box;
 }
@@ -340,7 +340,6 @@ footer {
   display:table;
   clear:both;
 }
-/***End of table styling***/
 
 /***Contact form styling***/
 
@@ -378,9 +377,69 @@ footer {
   right:5vw;
 }
 
-/*form
+/*form styling*/
+.form-container {
+  max-width:49vw;
+  padding: 1vw;
+  background-color:white;
+}
 
+/*input fields*/
+.form-container input[type=text] {
+  width:100%;
+  padding:.93vw;
+  margin:.6vw 0 .6vw 0;
+  border:none;
+  background: Gainsboro;
+  font-size:1vw;
+}
 
+/*General styling for all buttons*/
+button {
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   letter-spacing:.3vw;
+   font-size:1.5vw;
+   font-weight:bold;
+   padding:1.5vw;
+   cursor:pointer;
+   width:100%;
+   height:auto;
+}
+
+/*hover effect for contact and submit buttons*/
+button:hover, .form-container btn:hover {
+  color:white;
+  background-color:black;
+  transition-duration:1s;
+  -webkit-transition-duration:1s; /*for safari 4.0-8.0 */
+  border-color:silver;
+}
+
+/*Submit button*/
+.form-container .btn {
+  background-color:white;
+  color:black;
+  border-color:black;
+  margin-bottom:1vh;
+}
+
+/*Close button*/
+.form-container .cancel {
+  background-color:black;
+  color:white;
+  border-color:gray;
+}
+
+/*styling for close button on hover*/
+.form-container .cancel:hover {
+  color:white;
+  background-color:darkred;
+  transition-duration:1s;
+  -webkit-transition-duration:1s;
+  border-color:black;
+}
+
+/*above added recently*/
 
 /*input[input=text]targets all text input sections of the contact form*/
 input[type=text] {
@@ -430,9 +489,92 @@ form {
 }
 /*End contact form styling*/
 
+/***media query selection***/
+/*media rules for paragraph font size different screen size*/
+@media screen and (max-width:527px) {
+  p {
+    font-size:3.75vw;
+  }
+}
+
+@media screen and (min-width:528px) and (max-width:660px) {
+  p {
+    font-size:3.5vw;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width:799px) {
+  p {
+    font-size:2.75vw;
+  }
+}
+
+@media screen and (min-width:925px) and (max-width:1050px) {
+  p {
+    font-size:2.25vw;
+  }
+}
+
+@media screen and (min-width:1051px) and (max-width:1310px) {
+  p {
+    font-size:2vw;
+  }
+}
+
+@media screen and (min-width:1311px) and (max-width:1535px) {
+  p {
+    font-size:1.75vw;
+  }
+}
+
+@media screen and (min-width:1536px) and (max-width:2269px) {
+  p {
+    font-size:1.5vw;
+  }
+}
+
+@media screen and (min-width:2270px) {
+  p {
+    font-size:1.35vw;
+  }
+}
+
+/*media rule for navbar links for different screen sizes*/
+/*screens 1080px and smaller will have navbar links equally distributed*/
+@media screen and (max-width:1080px) {
+  .Navbar a{
+    width:20%;/*sets each navbar link to 1/5 of navbar*/
+    font-size:2.5vw;
+  }
+}
+
+/*enlarges font of the white text for smaller screens*/
+@media screen and (max-width:1080px) {
+  .white-text {
+    font-size:4.5vw;
+  }
+}
+
+/*possibly need to also do 550px for column tall*/
+@media screen and (min-width: 1725px) {
+  .Column_1 {
+    height:550px;
+  }
+  .Column_2 {
+    height:550px;
+  }
+}
+
+/*Media rule to remove margintop from h1 elements for extra large screens so paragraph fits column*/
+@media screen and (min-width:2000px) {
+  h1 {
+    margin-top:0;
+  }
+}
+
+
 /*smooth scrolling*/
 html {
   scroll-behavior:smooth;
 }
 
-/*left off at CSS form-popup (contact form styling)above*/
