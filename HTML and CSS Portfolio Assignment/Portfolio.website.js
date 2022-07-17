@@ -44,3 +44,8 @@ document.addEventListener("click", function(event) {
         closeForm()
     }
 }, false )
+
+//make #contact go to bottom of page when clicked//
+document.getElementById("Contact").addEventListener("click", function() {
+    document.body.scrollIntoView(false);
+});
