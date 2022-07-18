@@ -104,6 +104,10 @@ img:hover {
 footer {
   padding:5%;
   background-color:rgb(228, 199, 199);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
 }
 /*****End general styling****/
 /*Navbar styling*/
