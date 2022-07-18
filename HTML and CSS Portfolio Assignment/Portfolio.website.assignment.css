@@ -51,7 +51,7 @@ p {
 }
 /*Paragraph element hover effect*/
 p:hover{
-    color: rgba(241, 195, 195, 0.745);
+    color:purple;
     background: 
       linear-gradient(90deg,#4c0b3e 50%,#000 0) 
       var(--_p,100%)/200% no-repeat;
@@ -517,7 +517,7 @@ form {
 
 @media screen and (min-width:1051px) and (max-width:1310px) {
   p {
-    font-size:2vw;
+    font-size:1.6vw;
   }
 }
 
