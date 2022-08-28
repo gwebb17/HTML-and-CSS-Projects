@@ -21,7 +21,7 @@ h1 {
     font-family:Garamond, Times New Roman;
     text-align:center;/*Centering all h1 elements*/
     margin-top:3%;/*Adds a small margin above h1 elements*/
-    color:white;
+    color: black;
 }
 
 /*Heading 1 element hover effect*/
@@ -51,7 +51,7 @@ p {
 }
 /*Paragraph element hover effect*/
 p:hover{
-    color:purple;
+    color:rgb(194, 134, 194);
     background: 
       linear-gradient(90deg,#4c0b3e 50%,#000 0) 
       var(--_p,100%)/200% no-repeat;

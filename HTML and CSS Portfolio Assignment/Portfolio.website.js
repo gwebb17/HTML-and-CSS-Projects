@@ -46,6 +46,14 @@ document.addEventListener("click", function(event) {
 }, false )
 
 //make #contact go to bottom of page when clicked//
-document.getElementById("Contact").addEventListener("click", function() {
-    document.body.scrollIntoView(false);
-});
+//Here is old way of doing it that only takes user to bottom of page when Contact is clicked backspace // to revert
+//document.getElementById("Contact").addEventListener("click", function() {
+    //document.body.scrollIntoView(false);
+//});
+
+//Here is new way trying to get openForm to be called when someone clicks "Contact"
+document.addEventListener("click", function(event) {
+    if (event.target.matches("Contact")) {
+        openForm()
+    }
+}, false )
