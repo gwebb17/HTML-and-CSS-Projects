@@ -49,9 +49,22 @@ p {
     padding-right:20px;
     color:white
 }
+
+
+/*about text*/
+p.about-text {
+  font-size:1.4vw;
+}
+
+/*link text*/
+p.link-text {
+  text-align:center;
+}
+
+
 /*Paragraph element hover effect*/
 p:hover{
-    color:rgb(194, 134, 194);
+    color:black;
     background: 
       linear-gradient(90deg,#4c0b3e 50%,#000 0) 
       var(--_p,100%)/200% no-repeat;
